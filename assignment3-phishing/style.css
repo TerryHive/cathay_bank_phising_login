@@ -1,0 +1,156 @@
+:root {
+  --cathay-green: #00823f;
+  --cathay-light-green: #e8f5ed;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --border-color: #dddddd;
+}
+
+body {
+  font-family: 'Noto Sans', Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: var(--text-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.login-box {
+  padding: 1rem 0;
+}
+
+h2 {
+  text-align: center;
+  color: var(--cathay-green);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: var(--cathay-green);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--cathay-light-green);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: var(--cathay-green);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #006b33;
+}
+
+.help-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.forgot-link {
+  color: var(--cathay-green);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.note {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #dc3545;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #fff3f3;
+  border-radius: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    max-width: 160px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 0.7rem;
+  }
+
+  .help-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+} 
